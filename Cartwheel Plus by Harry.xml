@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wl:layout header="CartwheelPlus" version="5.0"
+    margin="3,3,3,3"
+    backgroundColor="#1e313f"
+    suggestedAspectRatio="Ultrawide"
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:wl='http://schemas.broadcastradio.com/myriad/2016/windowLayout'
+    xsi:schemaLocation="urn:Layout Layout.xsd">
+    <wl:screens>
+        <wl:screen index="0" totalRows="9" totalColumns="21">
+            <wl:containers>
+                <!--MediaWall/Library-->
+                <wl:container type="tab">
+                    <wl:position row="0" column="0" rowSpan="8" columnSpan="8" />
+                    <wl:tiles>
+                        <!--MediaWall-->
+                        <wl:tile type="MediaGridView" header="MediaWall" ribbonIsMinimised="false">
+                            <wl:settings>
+                                <mediaGridViewSettings>
+                                <lockToStationId>-1</lockToStationId>
+                                <smartInfoEngineId>0</smartInfoEngineId>
+                                </mediaGridViewSettings>
+                             </wl:settings>
+                        </wl:tile>    
+                        <!--Library-->
+                        <wl:tile type="MediaLibraryView" header="Library" ribbonIsMinimised="false">
+                            <wl:settings>
+                                <mediaLibraryViewSettings>
+                                    <lockToStationId>-1</lockToStationId>
+                                    <smartInfoEngineId>0</smartInfoEngineId>
+                                    </mediaLibraryViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+                    </wl:tiles>
+                </wl:container>
+                <!--SmartInfo/Favourites/Pad-->
+                <wl:container type="tab">
+                    <wl:position row="0" column="8" rowSpan="8" columnSpan="5" />
+                    <wl:tiles>
+                        <!--SmartInfo-->
+                        <wl:tile type="SmartInfoView" header="SmartInfo">
+                            <wl:settings>
+                                <smartInfoViewSettings>
+                                    <smartInfoEngineId>0</smartInfoEngineId>
+                                </smartInfoViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+
+                        <!--Information-->
+                        <wl:tile type="MediaItemInfoView" header="Item Information" ribbonIsMinimised="false">
+                            <wl:settings>
+                                <mediaItemInfoViewSettings>
+                                    <lockToStationId>-1</lockToStationId>
+                                    <smartInfoEngineId>0</smartInfoEngineId>
+                                </mediaItemInfoViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+
+
+                        <!--Favourites-->
+                        <wl:tile type="FavouritesSetView" header="Favourites" ribbonIsMinimised="false">
+                            <wl:settings>
+                                <favouriteSetViewSettings>
+                                <lockToStationId>-1</lockToStationId>
+                                </favouriteSetViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+
+
+
+
+                        <!--Pad-->
+                        <wl:tile type="PadView" header="Pad" ribbonIsMinimised="false">
+                            <wl:settings>
+                                <padViewSettings>
+                                    <lockToStationId>-1</lockToStationId>
+                                </padViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+
+                        
+
+                    </wl:tiles>
+                </wl:container>
+                <!--Players-->
+                <wl:container type="frame">
+                    <wl:position row="8" column="0" rowSpan="1" columnSpan="13" />
+                    <wl:tiles>
+                        <wl:tile type="MediaPlayersView" header="Players">
+                            <wl:settings>
+                                <mediaPlayersViewSettings>
+                                    <lockToStationId>-1</lockToStationId>
+                                    <firstPlayerIndex>1</firstPlayerIndex>
+                                    <lastPlayerIndex>99</lastPlayerIndex>
+                                    <orientation>horizontal</orientation>
+                                    <showPlayers>true</showPlayers>
+                                    <showRecorders>true</showRecorders>
+                                    <knobSize>25</knobSize>
+                                    <ridgeThickness>1</ridgeThickness>
+                                </mediaPlayersViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+                    </wl:tiles>
+                </wl:container>
+
+                <!--Dashboard-->
+                <wl:container type="frame">
+                    <wl:position row="0" column="13" rowSpan="2" columnSpan="6" />
+                    <wl:tiles>
+                        <wl:tile type="DashboardView" header="Dashboard">
+                            <wl:settings>
+                                <dashboardViewSettings>
+                                    <showEditLogButton>false</showEditLogButton>
+                                    <showPictures>true</showPictures>
+                                    <stretchGoButtonToFill>true</stretchGoButtonToFill>
+                                    <lockToStationId>-1</lockToStationId>
+                                    <smartInfoEngineId>0</smartInfoEngineId>
+                                    <showItemPlayIndicators>false</showItemPlayIndicators>
+                                    <maxNumberDisplayItems>0</maxNumberDisplayItems>
+                                </dashboardViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+                        
+                    </wl:tiles>
+                </wl:container>
+                <!--Clock-->
+                <wl:container type="frame">
+                    <wl:position row="0" column="19" rowSpan="2" columnSpan="2" />
+                    <wl:tiles>
+                        <wl:tile type="ClockView" header="Time">
+                            <wl:settings >
+                                <clockViewSettings>
+                                    <backgroundColor>#1e313f</backgroundColor>
+                                    <textColor>#c9c9c9</textColor>
+                                    <secondTickOnColor>#FFFF0000</secondTickOnColor>
+                                    <secondTickOffColor>#FF8B0000</secondTickOffColor>
+                                    <showTime>true</showTime>
+                                    <showTimeAsText>false</showTimeAsText>
+                                    <showDate>false</showDate>
+                                    <showSecondTicks>true</showSecondTicks>
+                                    <timeFormat>T</timeFormat>
+                                    <dateFormat>D</dateFormat>
+                                    <showPreferences>true</showPreferences>
+                                </clockViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+
+                    </wl:tiles>
+                </wl:container>
+                <!--Log-->
+                <wl:container type="frame">
+                    <wl:position row="2" column="13" rowSpan="7" columnSpan="8" />
+                    <wl:tiles>
+                        <wl:tile type="LogView" header="Station Log" ribbonIsMinimised="false">
+                            <wl:settings>
+                                <logViewSettings>
+                                    <lockToStationId>-1</lockToStationId>
+                                    <smartInfoEngineId>0</smartInfoEngineId>
+                                    <sendSelectedItemNotifications>true</sendSelectedItemNotifications>
+                                </logViewSettings>
+                            </wl:settings>
+                        </wl:tile>
+                    </wl:tiles>
+                </wl:container>
+            </wl:containers>
+        </wl:screen>
+    </wl:screens>
+</wl:layout>
